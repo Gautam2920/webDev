@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <header class="header">
+            <h1 class="title">FOCUS TIMER</h1>
+            <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </header>
+
+        <main class="main">
+            <section class="timer-card">
+
+                <div class="time-display">
+                    <span class="time">00:00</span>
+                </div>
+
+                <div class="controls">
+                    <select class="duration-select">
+                        <option value="15">15 min</option>
+                        <option value="25">25 min</option>
+                        <option value="35">35 min</option>
+                        <option value="45">45 min</option>
+                    </select>
+                    <button class="play-btn">▶</button>
+                </div>
+
+                <div class="session-info">
+                    <span>Session Count:</span>
+                    <span class="session-count">00</span>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
