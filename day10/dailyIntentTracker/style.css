@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: #f6f4ef;
+    color: #2e2e2e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker-page {
+    width: 100%;
+    max-width: 520px;
+    padding: 2.5rem 2rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    color: #3a3a3a;
+}
+
+.tracker {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+textarea {
+    width: 100%;
+    min-height: 90px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2e2e2e;
+    background: #fafafa;
+    margin-bottom: 1.5rem;
+}
+
+textarea::placeholder {
+    color: #a0a0a0;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #8fa99b;
+    background: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 0.75rem;
+}
+
+.save-btn {
+    background: #8fa99b;
+    color: #ffffff;
+}
+
+.save-btn:hover:not(:disabled) {
+    background: #7e978a;
+}
+
+.complete-btn {
+    background: #eceae4;
+    color: #4a4a4a;
+}
+
+.complete-btn:hover:not(:disabled) {
+    background: #e1ded6;
+}
+
+.reset-btn {
+    background: transparent;
+    color: #9a6f6f;
+}
+
+.reset-btn:hover:not(:disabled) {
+    background: #f4eeee;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #6a6a6a;
+}
+
+.feedback {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    background: #f3f2ed;
+    color: #4a4a4a;
+}
+
+.feedback:empty {
+    display: none;
+}
